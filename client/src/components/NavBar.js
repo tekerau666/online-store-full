@@ -28,7 +28,7 @@ export const NavBar = observer(() => {
     localStorage.clear();
   };
   return (
-    <Navbar bg="dark" variant="dark">
+    <Navbar style={{backgroundColor:"blue"}}>
       <Container>
         <NavLink
           style={{ color: "white", textDecoration: "none" }}
