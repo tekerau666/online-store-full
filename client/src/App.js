@@ -22,7 +22,12 @@ const App = observer(() => {
   }, []);
 
   if (loading) {
-    return <Spinner animation={"grow"} />;
+      {
+          return <div className="mt-5 d-flex justify-content-center">
+              <Spinner className="text-primary text-center" style={{width:"4rem", height:"4rem"}} animation={"border"}/>
+          </div>
+      }
+      setTimeout("3000")
   }
   return (
     <Router>
